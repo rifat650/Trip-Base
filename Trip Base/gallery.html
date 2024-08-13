@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>TripBoss</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- font awesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- custom css -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- navbar -->
+   <nav class="navbar">
+      <div class="container flex">
+         <a href="index.html" class="site-brand">
+            Trip <span>Boss</span>
+         </a>
+         <button type="button" id="navbar-show-btn" class="flex">
+            <i class="fas fa-bars"></i>
+         </button>
+         <div id="navbar-collapse" class="navbar-collapse">
+            <button type="button" id="navbar-close-btn" class="flex"><i class="fas fa-times"></i></button>
+            <ul class="navbar-nav">
+               <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+               <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+               <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+               <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!-- end of navbar -->
+   <!-- header -->
+   <header class="flex header-sm">
+      <div class="container">
+         <div class="header-title">
+            <h1>Gallery</h1>
+            <p>Browse through our gallery to experience a visual journey of remarkable images. Each photo tells a story, offering a glimpse into our unique perspective and creativity.</p>
+         </div>
+      </div>
+   </header>
+   <!-- end of header -->
+   <!-- gallery section -->
+
+   <section class="py-4" id="gallery">
+      <div class="container">
+         <div class="gallery-row">
+            <div class="gallery-item shadow">
+               <img src="images/gallery-1.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+            <div class="gallery-item shadow">
+               <img src="images/gallery-2.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+            <div class="gallery-item shadow">
+               <img src="images/gallery-3.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+            <div class="gallery-item shadow">
+               <img src="images/gallery-4.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+            <div class="gallery-item shadow">
+               <img src="images/gallery-5.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+            <div class="gallery-item shadow">
+               <img src="images/gallery-6.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+            <div class="gallery-item shadow">
+               <img src="images/gallery-7.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+            <div class="gallery-item shadow">
+               <img src="images/gallery-8.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+            <div class="gallery-item shadow">
+               <img src="images/gallery-9.jpg" alt="gallery-img">
+               <span class="zoom-icon">
+                  <i class="fas fa-search-plus"></i>
+               </span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- end of gallery section -->
+
+   <!-- img model -->
+   <div id="img-modal-box">
+      <div id="img-modal">
+         <button type="button" id="modal-close-btn">
+            <i class="fas fa-times"></i>
+         </button>
+         <button type="button" id="prev-btn" class="flex">
+            <i class="fas fa-chevron-left"></i>
+         </button>
+         <button type="button" id="next-btn" class="flex">
+            <i class="fas fa-chevron-right"></i>
+         </button>
+         <img src="images/gallery-1.jpg" alt="">
+      </div>
+   </div>
+
+   <!-- end of img model -->
+   <!-- popular places sertion -->
+
+   <section class="py-4" id="popular">
+      <div class="title-warp">
+         <span class="sm-title">know about some co destination</span>
+         <h2 class="lg-title"> popular places</h2>
+      </div>
+      <div class="popular-row">
+         <div class="popular-item shadow">
+
+            <img src="images/popular-1.jpg" alt="">
+            <div><span>Eiffel Tower,Paris</span>
+               <ul class="rating flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star-half-alt"></i></li>
+                  <li>&nbsp; 400 reviews</li>
+               </ul>
+               <p class="text">Experience stunning Paris views from the Eiffel Tower's observation decks.</p>
+            </div>
+         </div>
+         <div class="popular-item shadow">
+
+            <img src="images/popular-2.jpg" alt="">
+            <div><span>Machu Pichu,Peru</span>
+               <ul class="rating flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star-half-alt"></i></li>
+                  <li>&nbsp; 400 reviews</li>
+               </ul>
+               <p class="text">Explore breathtaking ancient ruins high in the Andes at Machu Picchu.</p>
+            </div>
+         </div>
+         <div class="popular-item shadow">
+
+            <img src="images/popular-3.jpg" alt="">
+            <div><span>Acropolis,Athens</span>
+               <ul class="rating flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star-half-alt"></i></li>
+                  <li>&nbsp; 400 reviews</li>
+               </ul>
+               <p class="text">Discover iconic ancient architecture with panoramic views at the Acropolis</p>
+            </div>
+         </div>
+         <div class="popular-item shadow">
+
+            <img src="images/popular-4.jpg" alt="">
+            <div><span>Bali,Indonesia</span>
+               <ul class="rating flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star-half-alt"></i></li>
+                  <li>&nbsp; 400 reviews</li>
+               </ul>
+               <p class="text">Enjoy serene beaches and vibrant culture in beautiful Bali.</p>
+            </div>
+         </div>
+
+
+         <div class="popular-item shadow">
+            <img src="images/popular-5.jpg" alt="">
+            <div><span>Dubai,United Arab Emirates</span>
+               <ul class="rating flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star-half-alt"></i></li>
+                  <li>&nbsp; 400 reviews</li>
+               </ul>
+               <p class="text">Experience luxury and innovation with stunning skylines in Dubai.</p>
+            </div>
+         </div>
+         <div class="popular-item shadow">
+
+            <img src="images/popular-6.jpg" alt="">
+            <div><span>Bhutan</span>
+               <ul class="rating flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star-half-alt"></i></li>
+                  <li>&nbsp; 400 reviews</li>
+               </ul>
+               <p class="text">Immerse in stunning landscapes and rich culture in mystical Bhutan.</p>
+            </div>
+         </div>
+         <div class="popular-item shadow">
+
+            <img src="images/popular-7.jpg" alt="">
+            <div><span>Havana,Cuba</span>
+               <ul class="rating flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star-half-alt"></i></li>
+                  <li>&nbsp; 400 reviews</li>
+               </ul>
+               <p class="text">Delight in vibrant streets and historic charm in colorful Havana.</p>
+            </div>
+         </div>
+         <div class="popular-item shadow">
+
+            <img src="images/popular-8.jpg" alt="">
+            <div><span>Moskva,Russia</span>
+               <ul class="rating flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star-half-alt"></i></li>
+                  <li>&nbsp; 400 reviews</li>
+               </ul>
+               <p class="text">Discover historic landmarks and dynamic city life in Moscow.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+ <!-- footer -->
+ <footer class="py-4">
+   <div class="container footer-row">
+       <div class="footer-item">
+           <a href="index.html" class="site-brand">
+               Trip<span>Base</span>
+           </a>
+           <p class="text">Trip Base is your gateway to unforgettable travel experiences. We specialize in crafting personalized journeys, providing expert guidance, and offering the best deals to make your trips extraordinary. Discover new destinations with us today.</p>
+       </div>
+       <div class="footer-item">
+           <h2>Follow us on: </h2>
+           <ul class="social-links">
+               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+               <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+           </ul>
+       </div>
+       <div class="footer-item">
+           <h2>Popular Places:</h2>
+           <ul>
+               <li><a href="#">Thailand</a></li>
+               <li><a href="#">Swizerland</a></li>
+               <li><a href="#">Germany</a></li>
+               <li><a href="#">Maldives</a></li>
+               <li><a href="#">Austrilia</a></li>
+           </ul>
+       </div>
+       <div class="footer-item subscribe-form">
+           <h2>subscribe for news letter!</h2>
+           <form class="flex">
+               <input type="email" placeholder="enter email" class="form-control">
+               <input type="submit" value="subscribe" class="btn">
+
+           </form>
+
+       </div>
+   </div>
+</footer>
+<!-- end of footer -->
+   <!-- js -->
+   <script src="js/script.js"></script>
+   <script>
+          // gallery section
+     const allGalleryItem = document.querySelectorAll(".gallery-item");
+     const imgModalDiv = document.getElementById("img-modal-box");
+     const imgModalImg = document.querySelector("#img-modal img");
+     const modalCloseBtn = document.querySelector('#modal-close-btn');
+     const nextBtn = document.getElementById("next-btn");
+     const prevBtn = document.getElementById("prev-btn");
+     let currentIndex;
+     allGalleryItem.forEach((galleryItem, index) => {
+
+        galleryItem.addEventListener("click", () => {
+           imgModalDiv.style.display = "block";
+           currentIndex = index;
+           let imgSrc = galleryItem.querySelector("img").src;
+           imgModalImg.setAttribute("src", imgSrc);
+        })
+     });
+     modalCloseBtn.addEventListener("click", () => {
+        imgModalDiv.style.display = "none";
+     });
+     nextBtn.addEventListener("click", () => {
+
+        if(currentIndex===allGalleryItem.length-1){
+           currentIndex=0;
+        }else{
+           currentIndex += 1
+        }
+        let nextImgSrc = allGalleryItem[currentIndex].querySelector("img").src;
+        imgModalImg.setAttribute("src", nextImgSrc);
+     })
+     prevBtn.addEventListener("click", () => {
+        if(currentIndex===0){
+           currentIndex=allGalleryItem.length-1;
+        }else{
+           currentIndex -= 1
+        }   
+        let prevImgSrc = allGalleryItem[currentIndex].querySelector("img").src;
+        imgModalImg.setAttribute("src", prevImgSrc);
+     })
+   </script>
+</body>
+
+</html>
